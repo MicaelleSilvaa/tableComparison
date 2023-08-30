@@ -7,19 +7,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@900&display=swap" rel="stylesheet">
     <title>Tabela</title>
+    
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #ffc01446, #ff5e0063);
+        }
+
+        .layout-border-color {
+            width: 650px;
+            height: 730px;
+            background: linear-gradient(45deg, #FF1493, #FFA500);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .layout {
+            width: 600px; 
+            height: 680px;
+            background-color: #ffc258;
+            border-radius: 2%; 
+            box-shadow: -1px 2px 26px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: -1px 2px 26px 0px rgba(0,0,0,0.50);
+            -moz-box-shadow: -1px 2px 26px 0px rgba(0,0,0,0.50);
+            position: relative;
+        }
+
+        td, th{
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 10px;
+            border: none;
+            line-height: 1.5;
+        }
+
+        th{
+            background-color: rgb(255, 255, 255);
+        }
+
+        table{
+            margin: 60px;
+            border: none;
+            border-collapse: separate;
+       
+        }
+
+        h1{
+            font-family: 'Passion One', cursive;
+            margin-left: 50px;
+            font-size: 60px;
+            color: #ffffff;
+            text-shadow: 5px 5px 10px #000000;
+            position: relative;
+
+        }
+        .layout > div{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .layout > div > img{
+            width: 250px;
+            height: 250px;
+        } 
+    </style>
 </head>
 <body>
     
     <div class="layout-border-color">
         <div class="layout">
-            <img src="./assets/a.png" alt="Imagem dos salgados" width="300" height="280">
-            <h1>CARDÁPIO</h1>
+            <div>
+                <h1>CARDÁPIO</h1>
+                <img src="./assets/a.png" alt="Imagem dos salgados" width="400" height="380">
+            </div>
         <table style="margin-top: 2px;">
             <colgroup>
                 <col style="width: 20%;">
                 <col style="width: 20%;">
                 <col style="width: 20%;">
-                <col style="width: 20%;">
+                <col style="width: 30%;">
             </colgroup>
             <thead>
                 <tr>
@@ -68,6 +137,29 @@
                     <td>Queijo</td>
                     <td>O mais gostoso!</td>
                 </tr>
+
+                <tr>
+                    <th style="width: 20%;">Hambúrguer</th>
+                </tr>
+            <tbody>
+            <tr>
+                <td>Tradicional</td>
+                <td>R$ 5,00</td>
+                <td>Completo</td>
+                <td>A mais saborosa!</td>
+            </tr>
+            <tr>
+                <td>Gourmet</td>
+                <td>R$ 8,00</td>
+                <td>Completo</td>
+                <td>O mais quentinho!</td>
+            </tr>
+            <tr>
+                <td>DaCasa</td>
+                <td>R$ 10,00</td>
+                <td>Completo</td>
+                <td>O mais gostoso!</td>
+            </tr>
             </tbody>
                 
             
@@ -81,66 +173,6 @@
         
     </table>
 
-    <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(45deg, #ff149124, #ffa60024);
-        }
-
-        .layout-border-color {
-            width: 650px;
-            height: 730px;
-            background: linear-gradient(45deg, #FF1493, #FFA500);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        
-        .layout {
-            width: 600px; 
-            height: 680px;
-            background-color: #ffc258;
-            border-radius: 2%; 
-            box-shadow: -1px 2px 26px 0px rgba(0,0,0,0.75);
-            -webkit-box-shadow: -1px 2px 26px 0px rgba(0,0,0,0.50);
-            -moz-box-shadow: -1px 2px 26px 0px rgba(0,0,0,0.50);
-            position: relative;
-        }
-
-        td, th{
-            font-family: 'Montserrat', sans-serif;
-            margin-left: 10px;
-            border: none;
-            line-height: 1.5;
-        }
-
-        th{
-            background-color: rgb(255, 255, 255);
-        }
-
-        table{
-            margin: 60px;
-            border: none;
-            border-collapse: separate;
-       
-        }
-
-        h1{
-            font-family: 'Passion One', cursive;
-            margin-left: 60px;
-            font-size: 60px;
-            color: #ffffff;
-            text-shadow: 5px 5px 10px #000000;
-            position: relative;
-
-        }
-
-
-
-    </style>
     </div>
 </div>
 
@@ -151,4 +183,4 @@
 
 <!--//Faça uma página Web que use tabelas, para uma empresa qualquer (pode ser fictícia),
     comparando preços ou características de seus produtos.​
-Enviar apenas o link do arquivo com a extensão “.html” !!!​-->
+Enviar apenas o link do arquivo com a extensão “.html” !!!​-->
